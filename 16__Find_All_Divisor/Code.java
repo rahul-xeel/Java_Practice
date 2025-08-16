@@ -36,11 +36,18 @@ public class Code {
         {
             if ((number%i) == 0) {
 
+                result += " , " + i ;
                 int reminder = number/i;
-                result += " , " + i + " , " + reminder;
+
+                if (reminder != i) {
+                    
+                    result += " , " + reminder;
+                }
 
             }
         }
+
+        result += " , " + number;
        
 
         return result;
