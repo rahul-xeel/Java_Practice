@@ -32,8 +32,14 @@ public class Code {
 
     long Converter(long number) {
         
-      
-        long result = 0;
+      long result = 0;
+
+        if (number == 0) {
+
+                result =  1;
+                return result;
+            }
+        
 
           while (number > 0) {
 
