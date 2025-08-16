@@ -36,8 +36,9 @@ public class Code {
     long Converter(int number) {
 
         int result = 0;
+        int stopingpoint = (int)Math.sqrt(number);
 
-        for(int i=2; i<number; i++)
+        for(int i=2; i<=stopingpoint; i++)
         {
            if ((number%i) == 0) {
             
