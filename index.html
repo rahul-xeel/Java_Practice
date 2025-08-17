@@ -945,6 +945,141 @@
                                 <!-- ************************************************************************************* -->
 
 
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+                                <div class="ELEMENT">
+                                    <div class="ELEMENT_a">
+                                        <div class="ELEMENT_a_1">32</div>
+                                        <div class="ELEMENT_a_2">UNSET THE LSBs TILL ith BIT</div>
+                                    </div>
+                                    <div class="ELEMENT_b">
+                                        <div class="ELEMENT_b_left">
+
+                                            <div class="ELEMENT_b_left_1">* Program to unset (clear) the least
+                                                significant bits (LSBs) from 0th to (i-1)th position.</div>
+                                            <div class="ELEMENT_b_left_1">* Create a mask with all 1s except the lowest
+                                                i bits → mask = (~((1 &lt;&lt; i) - 1)).</div>
+                                            <div class="ELEMENT_b_left_1">* Perform bitwise AND → result = number &amp;
+                                                mask.</div>
+                                            <div class="ELEMENT_b_left_1">* Example: number = 29 (11101), i = 3 → mask =
+                                                11111000 → result = 24 (11000).</div>
+                                            <div class="ELEMENT_b_left_1">* Time complexity: O(1), as only one mask and
+                                                AND operation is required.</div>
+
+                                        </div>
+                                        <div class="ELEMENT_b_right">
+                                            <a href="https://github.com/rahul-xeel/Java_Practice/tree/main/32__Unset_The_LSBs_Till_ith_Bit"
+                                                target="_blank" class="ELEMENT_b_right_btn_box">OPEN REPO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+                                <div class="ELEMENT">
+                                    <div class="ELEMENT_a">
+                                        <div class="ELEMENT_a_1">33</div>
+                                        <div class="ELEMENT_a_2">UNSET THE MSBs TILL ith BIT</div>
+                                    </div>
+                                    <div class="ELEMENT_b">
+                                        <div class="ELEMENT_b_left">
+
+                                            <div class="ELEMENT_b_left_1">* Program to unset (clear) all the most
+                                                significant bits (MSBs) above the ith position.</div>
+                                            <div class="ELEMENT_b_left_1">* Create a mask with only the lowest i bits
+                                                set to 1 → mask = (1 &lt;&lt; i) - 1.</div>
+                                            <div class="ELEMENT_b_left_1">* Perform bitwise AND → result = number &amp;
+                                                mask.</div>
+                                            <div class="ELEMENT_b_left_1">* Example: number = 173 (10101101), i = 5 →
+                                                mask = 00011111 → result = 13 (00001101).</div>
+                                            <div class="ELEMENT_b_left_1">* Time complexity: O(1), since only one mask
+                                                and AND operation is needed.</div>
+
+                                        </div>
+                                        <div class="ELEMENT_b_right">
+                                            <a href="https://github.com/rahul-xeel/Java_Practice/tree/main/33__Unset_The_MSBs_Till_ith_Bit"
+                                                target="_blank" class="ELEMENT_b_right_btn_box">OPEN REPO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+
+
+
+
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+                                <div class="ELEMENT">
+                                    <div class="ELEMENT_a">
+                                        <div class="ELEMENT_a_1">34</div>
+                                        <div class="ELEMENT_a_2">CHARACTER CONVERSION TO UPPERCASE USING BIT</div>
+                                    </div>
+                                    <div class="ELEMENT_b">
+                                        <div class="ELEMENT_b_left">
+
+                                            <div class="ELEMENT_b_left_1">* Program to convert a lowercase alphabet into
+                                                uppercase using bit manipulation.</div>
+                                            <div class="ELEMENT_b_left_1">* In ASCII, difference between 'a' (97) and
+                                                'A' (65) is the 5th bit (value 32).</div>
+                                            <div class="ELEMENT_b_left_1">* To make a character uppercase → clear the
+                                                5th bit using: result = ch &amp; (~(1 &lt;&lt; 5)).</div>
+                                            <div class="ELEMENT_b_left_1">* Example: 'a' = 0110 0001 → AND with 1101
+                                                1111 → 0100 0001 = 'A'.</div>
+                                            <div class="ELEMENT_b_left_1">* Works only for alphabets, already uppercase
+                                                letters remain unchanged.</div>
+                                            <div class="ELEMENT_b_left_1">* Time complexity: O(1), since it is a single
+                                                bitwise operation.</div>
+
+                                        </div>
+                                        <div class="ELEMENT_b_right">
+                                            <a href="https://github.com/rahul-xeel/Java_Practice/tree/main/34__Char_Conversion_Using_bit_to_uppercase"
+                                                target="_blank" class="ELEMENT_b_right_btn_box">OPEN REPO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+
+
+
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+                                <div class="ELEMENT">
+                                    <div class="ELEMENT_a">
+                                        <div class="ELEMENT_a_1">35</div>
+                                        <div class="ELEMENT_a_2">CHARACTER CONVERSION TO LOWERCASE USING BIT</div>
+                                    </div>
+                                    <div class="ELEMENT_b">
+                                        <div class="ELEMENT_b_left">
+
+                                            <div class="ELEMENT_b_left_1">* Program to convert an uppercase alphabet
+                                                into lowercase using bit manipulation.</div>
+                                            <div class="ELEMENT_b_left_1">* In ASCII, difference between 'A' (65) and
+                                                'a' (97) is the 5th bit (value 32).</div>
+                                            <div class="ELEMENT_b_left_1">* To make a character lowercase → set the 5th
+                                                bit using: result = ch | (1 &lt;&lt; 5).</div>
+                                            <div class="ELEMENT_b_left_1">* Example: 'A' = 0100 0001 → OR with 0010 0000
+                                                → 0110 0001 = 'a'.</div>
+                                            <div class="ELEMENT_b_left_1">* Works only for alphabets, already lowercase
+                                                letters remain unchanged.</div>
+                                            <div class="ELEMENT_b_left_1">* Time complexity: O(1), since it is a single
+                                                bitwise operation.</div>
+
+                                        </div>
+                                        <div class="ELEMENT_b_right">
+                                            <a href="https://github.com/rahul-xeel/Java_Practice/tree/main/35__Char_Conversion_Using_bit_to_lowercase"
+                                                target="_blank" class="ELEMENT_b_right_btn_box">OPEN REPO</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- ************************************************************************************* -->
+                                <!-- ************************************************************************************* -->
+
+
+
                             </div>
 
 
