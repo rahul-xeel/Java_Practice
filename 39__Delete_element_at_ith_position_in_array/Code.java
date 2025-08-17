@@ -18,21 +18,44 @@ public class Code {
         System.out.print("Enter the index of element to delete --->  ");
         int index = listen.nextInt();
 
-        for (int i = index; i < arr.length - 1; i++) {
-            arr[i] = arr[i + 1];
+        Deleting(arr, index);
 
-        }
+        Printarr(arr);
 
-        arr[arr.length - 1] = 0;
-
-        System.out.println();
-        System.out.println();
-        System.out.print("Your new array is :- ");
-
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ") ;
-        }
 
     }
+
+
+    ////////////     DELETING 1D ARRAY
+    
+     static void Deleting(int arr[], int index)
+    {
+        for (int i = index; i < arr.length - 1; i++) {
+            arr[i] = arr[i + 1];
+        }
+        arr[arr.length - 1] = 0;
+    }
+
+
+   ////////////     PRINTING 1D ARRAY
+    
+     static void Printarr(int arr[])
+    {
+         System.out.println();
+         System.out.println();
+         System.out.print("Your arry is :- [ ");
+         for(int j=0; j<arr.length; j++)
+        {
+           
+            System.out.print(arr[j]);
+            if (j != arr.length-1) {
+                System.out.print(",");
+            }
+        }
+        
+        System.out.print(" ]");
+    }
+
+
 
 }
