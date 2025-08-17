@@ -26,11 +26,7 @@ public class Code {
 
         Print_Multi_Dimensional_Array(arr);
 
-
-
     }
-
-
 
 
     //////////// INSERTING ELEMNET IN 2D ARRAY
