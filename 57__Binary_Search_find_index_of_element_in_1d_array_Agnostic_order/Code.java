@@ -8,7 +8,7 @@ public class Code {
         System.out.println("-------- BINARY SEARCH --------");
         System.out.println();
         System.out.println();
-        System.out.println("---- FIND THE INDEX OF ELEMENT IN 1D ARRAY DECREASING ORDER-----");
+        System.out.println("---- FIND THE INDEX OF ELEMENT IN 1D ARRAY AGNOSTIC ORDER-----");
         Scanner listen = new Scanner(System.in);
         System.out.println();
         System.out.println("Your current array is { 5, 4, 3, 2, 1 }");
@@ -17,9 +17,27 @@ public class Code {
         int arr[] = { 5, 4, 3, 2, 1 };
         System.out.println();
 
-        FIND_INDEX_OF_ELEMENT_1D_ARRAY_DECREASING_ORDER(arr, target);
+
+
+        if(arr[0] > arr[arr.length-1])
+        {
+            FIND_INDEX_OF_ELEMENT_1D_ARRAY_DECREASING_ORDER(arr,target);
+        }
+        else if(arr[0] < arr[arr.length-1])
+        {
+            FIND_INDEX_OF_ELEMENT_1D_ARRAY_INCREASING_ORDER(arr, target);
+        }
+        else
+        {
+            System.out.println("ALL THE ELEMENT ARE SAME");
+        }
+
 
     }
+
+
+
+
 
     //// FINDING INDEX OF ELEMENT IN 1D ARRAY
 
@@ -64,5 +82,53 @@ public class Code {
         }
 
     }
+
+
+
+
+    //// FINDING INDEX OF ELEMENT IN 1D ARRAY
+
+    public static void FIND_INDEX_OF_ELEMENT_1D_ARRAY_INCREASING_ORDER(int arr[], int target) {
+
+        int ans_index = 0;
+        boolean found = false;
+        int start = 0;
+        int end = arr.length - 1;
+        int mid;
+
+        while (start <= end) {
+
+             mid = start + (end - start)/2;
+
+
+            if (arr[mid] == target) {
+                ans_index = mid;
+                found = true;
+                break;
+            }
+
+             else if (target > arr[mid]) {
+                start = mid + 1;
+            }
+            
+            else {
+                end = mid - 1;
+                 }
+
+           
+
+        }
+
+        if (found == true) {
+
+            System.out.println("Your index is :- " + ans_index);
+
+        } else {
+            System.out.println("Element not found");
+
+        }
+
+    }
+
 
 }

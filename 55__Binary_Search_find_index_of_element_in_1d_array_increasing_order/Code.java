@@ -8,7 +8,7 @@ public class Code {
         System.out.println("-------- BINARY SEARCH --------");
         System.out.println();
         System.out.println();
-        System.out.println("---- FIND THE INDEX OF ELEMENT IN 1D ARRAY-----");
+        System.out.println("---- FIND THE INDEX OF ELEMENT IN 1D ARRAY INCREASING ORDER-----");
         Scanner listen = new Scanner(System.in);
         System.out.println();
         System.out.println("Your current array is { 1, 2, 3, 4, 5 }");
@@ -17,13 +17,13 @@ public class Code {
         int arr[] = { 1, 2, 3, 4, 5 };
         System.out.println();
 
-        FIND_INDEX_OF_ELEMENT_1D_ARRAY(arr, target);
+        FIND_INDEX_OF_ELEMENT_1D_ARRAY_INCREASING_ORDER(arr, target);
 
     }
 
     //// FINDING INDEX OF ELEMENT IN 1D ARRAY
 
-    public static void FIND_INDEX_OF_ELEMENT_1D_ARRAY(int arr[], int target) {
+    public static void FIND_INDEX_OF_ELEMENT_1D_ARRAY_INCREASING_ORDER(int arr[], int target) {
 
         int ans_index = 0;
         boolean found = false;
