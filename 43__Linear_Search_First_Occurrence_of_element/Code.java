@@ -23,25 +23,32 @@ public class Code {
 
         System.out.println();
 
-        int index = FIRST_OCCURRENCE(arr, Target);
-
-        System.out.println(Target + " Found At " + index  + "th index");
+        FIRST_OCCURRENCE(arr, Target);
 
     }
 
-    public static int FIRST_OCCURRENCE(int arr[], int Target) {
+    public static void FIRST_OCCURRENCE(int arr[], int Target) {
 
         int index = 0;
+        boolean found = false;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == Target) {
+                found = true;
                 index = i;
                 break;
             }
 
         }
 
-        return index;
+        if(found)
+        {
+            System.out.println(Target + " Found At " + index  + "th index");
+        }
+        else
+        {
+           System.out.println(Target + " Found At No index");
+        }
     }
 
 }
