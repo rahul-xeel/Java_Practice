@@ -8,15 +8,15 @@ public class Code {
         System.out.println("-------- LINEAR SEARCH --------");
         System.out.println();
         System.out.println();
-        System.out.println("---- FIND THE INDEX OF ELEMENT IN 2D ARRAY-----");
+        System.out.println("---- FIND THE INDEX OF ELEMENT OF LAST OCCURENCE IN 2D ARRAY-----");
         Scanner listen = new Scanner(System.in);
         System.out.println();
-        System.out.println("Your current array is { {1,2}, {3,4}, {5,6},{7,8} }");
+        System.out.println("Your current array is { {1,2}, {2,4}, {5,6},{2,8} }");
         System.out.println();
         System.out.print("Enter the element to find ---->  ");
         int Target = listen.nextInt();
 
-        int arr[][] = { {1,2}, {3,4}, {5,6},{7,8} };
+        int arr[][] = { {1,2}, {2,4}, {5,6},{2,8} };
         System.out.println();
 
 
@@ -44,15 +44,9 @@ public class Code {
                     found = true;
                     I = i;
                     J = j;
-                    break;
+
                 }
             }
-
-            if (found) {
-            
-                break;
-            }
-
 
         }
 
