@@ -8,7 +8,7 @@ public class Code {
         System.out.println("-------- LINEAR SEARCH --------");
         System.out.println();
         System.out.println();
-        System.out.println("---- FIND THE INDEX OF THE ELEMENT AT IT'S LAST OCCURRENCE-----");
+        System.out.println("---- FIND THE INDEX OF THE ELEMENT AT MULTIPLE OCCURRENCE-----");
         Scanner listen = new Scanner(System.in);
         System.out.println();
         System.out.println();
@@ -23,26 +23,38 @@ public class Code {
 
         System.out.println();
 
-        LAST_OCCURRENCE(arr, Target);
+        MULTIPLE_OCCURRENCE(arr, Target);
 
     }
 
-    public static void LAST_OCCURRENCE(int arr[], int Target) {
+    public static void MULTIPLE_OCCURRENCE(int arr[], int Target) {
 
-        int index = 0;
+        
+
+        int ans[] = new int[arr.length];
+        int k = 0;
         boolean found = false;
 
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == Target) {
                 found = true;
-                index = i;
+                ans[k] = i;
+                k++;
             }
 
         }
 
         if(found)
         {
-            System.out.println("Last Occurrence Of "+ Target + " Found At " + index  + "th index");
+            System.out.print("Last Occurrence Of "+ Target + " Found At ");
+            for(int j=0; j<=k-1; j++)
+            {
+                System.out.print(ans[j]);
+                if(j != k-1 )
+                {
+                    System.out.print(",");
+                }
+            }
         }
         else
         {
