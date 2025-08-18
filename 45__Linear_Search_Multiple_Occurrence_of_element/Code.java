@@ -47,7 +47,7 @@ public class Code {
         if(found)
         {
             System.out.print("Last Occurrence Of "+ Target + " Found At ");
-            for(int j=0; j<=k-1; j++)
+            for(int j=0; j<k; j++)
             {
                 System.out.print(ans[j]);
                 if(j != k-1 )
